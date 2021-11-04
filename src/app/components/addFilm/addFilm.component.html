@@ -1,0 +1,28 @@
+<div class="films">
+  <form class="films__form" #filmForm="ngForm" (ngSubmit)="onSubmit()">
+    <div>
+      <input
+        type="text"
+        id="name"
+        required
+        [(ngModel)]="model.name"
+        name="name"
+      />
+    </div>
+    <div>
+      <select id="genre" [(ngModel)]="model.genre" name="genre">
+        <option *ngFor="let genre of genres" [value]="genre">
+          {{ genre }}
+        </option>
+      </select>
+    </div>
+    <button class="films__btn" [disabled]="!filmForm.form.valid" type="submit">
+      Add Movie
+    </button>
+  </form>
+</div>
+<div class="films__added" [hidden]="!submited">
+  <h2>You Added Movie to the dummie data</h2>
+  <p>Name: {{ model.name }}</p>
+  <p>Genre: {{ model.genre }}</p>
+</div>

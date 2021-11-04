@@ -1,0 +1,38 @@
+#genre {
+  margin-top: 10px;
+  width: 500px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.films {
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__btn {
+    font-size: 16px;
+    margin-top: 20px;
+    width: 500px;
+    padding: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__added {
+    color: white;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+#name {
+  width: 500px;
+  padding: 16px;
+  font-size: 24px;
+}

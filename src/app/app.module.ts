@@ -10,15 +10,16 @@ import { SliderComponent } from './components/slider/slider.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './components/about/about.component';
-import { SearchComponent } from './components/search/search.component';
+import { AddFilmComponent } from './components/addFilm/addFilm.component';
 import { HomeComponent } from './components/home/home.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     SliderComponent,
     AboutComponent,
-    SearchComponent,
+    AddFilmComponent,
     HomeComponent,
   ],
   imports: [
@@ -29,6 +30,7 @@ import { HomeComponent } from './components/home/home.component';
     MatBadgeModule,
     SlickCarouselModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

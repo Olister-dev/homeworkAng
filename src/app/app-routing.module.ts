@@ -1,5 +1,5 @@
 import { HomeComponent } from './components/home/home.component';
-import { SearchComponent } from './components/search/search.component';
+import { AddFilmComponent } from './components/addFilm/addFilm.component';
 import { AboutComponent } from './components/about/about.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -19,8 +19,8 @@ const routes: Routes = [
     component: AboutComponent,
   },
   {
-    path: 'search',
-    component: SearchComponent,
+    path: 'addFilm',
+    component: AddFilmComponent,
   },
 ];
 
