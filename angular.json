@@ -156,6 +156,6 @@
   },
   "defaultProject": "netflix-clone",
   "cli": {
-    "analytics": "e9a35987-689e-4972-ad4d-9abdf1d6d9e5"
+    "analytics": false
   }
 }
